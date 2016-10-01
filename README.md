@@ -21,6 +21,12 @@ Tables:
 
       By allowing users to create their own genders, we will get submissions such as
       `Apache Attack Helicopter`, and `FuckGender`. This is fine by me tbh.
+  * Users
+      The Users table is a map of user_id to gender using foreign keys
+
+      Columns: `user_id`
+
+      `belongs_to` Genders
 
 Endpoints:
 
