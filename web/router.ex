@@ -5,7 +5,9 @@ defmodule GenderService.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", GenderService do
+  scope "/", GenderService do
     pipe_through :api
+
+    resources "/genders", GenderController, except: [:new, :edit]
   end
 end
